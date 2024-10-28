@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: orange; /* Set all fonts to orange */
+}
+
+/* Grey background for the entire page */
+body {
+    background-color: grey;
+}
+
+.contact {
+    min-height: 100vh;
+    background-color: #e8f0fe;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Container adjustments */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 220px; /* Added to accommodate the vertical nav */
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: orange; /* Text color changed to orange */
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: orange; /* Text color changed to orange */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: orange; /* Text color changed to orange */
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: orange; /* Button text color changed to orange */
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.contact-info i {
+    color: orange;
+    margin-right: 10px;
+}
+
+.vertical-nav {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-nav ul li {
+    margin: 20px 0;
+}
+
+.vertical-nav ul li a {
+    color: orange;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #575757;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .vertical-nav {
+        width: 100%; 
+        height: auto;
+        position: relative;
+    }
+
+    .vertical-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .vertical-nav ul li {
+        margin: 10px;
+    }
+}
